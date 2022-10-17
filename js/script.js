@@ -16,3 +16,10 @@ var cards = document.querySelectorAll(".card");
     card.classList.toggle("is-flipped");
   });
 });
+
+var desplazamiento = document.getElementById("posicionamiento");
+desplazamiento[0].addEventListener("click",function(){
+  let posicion = document.querySelector(".section-terciary").getBoundingClientRect().top;
+  window.scrollTo(0,posicion);
+  transition = "3s";
+})
