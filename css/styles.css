@@ -319,10 +319,7 @@ footer {
   line-height: 30px;
   font-weight: 400;
 }
-#posicionamiento{
-  transform: translate();
-  transition: all 0.5s ease-out;
-}
+
 @media (min-width: 768px) {
   nav {
     display: flex;
