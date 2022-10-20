@@ -44,9 +44,11 @@ body {
 }
 
 nav {
+  position: sticky;
   padding: var(--space-s);
   background: var(--primary-color);
   z-index: 10;
+  top:0;
 }
 
 main {

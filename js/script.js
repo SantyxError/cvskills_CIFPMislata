@@ -5,7 +5,7 @@ btnToggle[0].addEventListener("click", function () {
   if (menuUL[0].style.height) {
     menuUL[0].style.height = null;
   } else {
-    menuUL[0].style.setProperty("height", "100vh");
+    menuUL[0].style.setProperty("height", "40vh");
   }
 });
 

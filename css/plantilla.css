@@ -44,9 +44,11 @@ body {
 }
 
 nav {
+  position: sticky;
   padding: var(--space-s);
   background: var(--primary-color);
   z-index: 10;
+  top: 0;
 }
 
 main {
@@ -136,11 +138,6 @@ main {
   padding: var(--space-l) var(--space-s);
 }
 
-.display-flow {
-  display: flex;
-  flex-direction: row;
-}
-
 .section-primary {
   background-color: var(--terciary-color);
   color: var(--secondary-color2);
@@ -199,17 +196,12 @@ main {
   width: 100%;
 }
 
-.video-container,
-.info-medallas,
-.info-aprende-mejores,
-.info-mas-alto,
-.intro-skills {
+.video-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .wrapper-video-section:last-child {
-  padding: var(--space-m) 0;
   text-align: center;
 }
 
@@ -240,6 +232,11 @@ footer {
   color: var(--secondary-color9);
 }
 
+.display-flow {
+  display: flex;
+  flex-direction: column;
+}
+
 .lista-cursos {
   display: flex;
   flex-direction: column;
@@ -264,13 +261,12 @@ footer {
   text-decoration: underline;
   text-align: center;
 }
-
-.text-padding {
-  padding-left: var(--space-m);
+.text-padding{
+  padding-left: var(--space-xs);
+  padding-top: var(--space-s);
 }
 
 .subtitulo{
-  
   color: var(--primary-color);
   text-decoration-line: underline;
 }
@@ -290,7 +286,38 @@ p {
   text-align: center;
   list-style-image: url("../img/pruebas.png");
 }
+.position-profesional{
+  display: none;
+}
+.video-skills{
+padding-bottom: var(--space-l);
+}
 @media (min-width: 768px) {
+  .lista-li{
+    text-align: left;
+  }
+  .profesional{
+    padding-top: var(--space-xs);
+  }
+  .text-padding {
+    padding-top: 0rem;
+    padding-left: var(--space-m);
+  }
+
+  .position-profesional{
+    display:inline-block;
+    
+  }
+
+  .position-profesional2{
+    display: none;
+  }
+
+  .display-flow{
+    flex-direction: row;
+    text-align: center;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -339,18 +366,22 @@ p {
   .video-container {
     flex-direction: row;
     align-items: center;
+
   }
 
 
   .wrapper-video-section {
-    text-align: left;
-    width: 50%;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
-  .video-skills {
-    width: 80%;
-    height: 20rem;
+  .video-skills{
+    padding:0rem var(--space-xs);
+    width: 30%;
+    height: 12rem;
+ 
   }
+
 
   .wrapper-image-section-right {
     text-align: right;
