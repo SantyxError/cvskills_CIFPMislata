@@ -226,7 +226,7 @@ main {
   width: 100%;
 }
 
-.video-container,
+.video-container-home,
 .info-medallas,
 .info-aprende-mejores,
 .info-mas-alto,
@@ -382,10 +382,6 @@ footer {
     font-size: 1rem;
   }
 
-  /* .menu > li > .primary-link {
-    display: none;
-  } */
-
   .menu > li > .primary-link {
     margin: unset;
   }
@@ -404,11 +400,7 @@ footer {
     padding: var(--space-xl) 0;
   }
 
-  /* .text-with-padding {
-    padding: 0 var(--space-l);
-  } */
-
-  .video-container {
+  .video-container-home {
     flex-direction: row;
     align-items: center;
   }
