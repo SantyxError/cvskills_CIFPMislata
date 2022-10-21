@@ -56,9 +56,9 @@ main {
 }
 
 .title,
-.title2 {
+.title2,
+.title-espec {
   font-family: "Arbutus Slab", serif;
-
   font-size: 2.4rem;
   line-height: 2.8rem;
   font-weight: 400;
@@ -69,17 +69,26 @@ main {
   color: var(--secondary-color1);
 }
 
-
 .subtitle {
   font-size: 1.2rem;
   color: var(--secondary-color1);
 }
 
 .text,
-.text-with-padding {
+.text-with-padding,
+.text-profesional,
+.text-padding-profesional,
+.text-profesional-last {
   font-size: 1rem;
   line-height: 1.8rem;
 }
+.text-profesional {
+  padding-bottom: var(--space-s);
+}
+
+/* .text-padding-profesional > li:last-child {
+  padding-bottom: 0;
+} */
 
 .logo {
   width: 3rem;
@@ -106,12 +115,12 @@ main {
   overflow: hidden;
 }
 
-.menu>li {
+.menu > li {
   list-style-type: none;
   font-size: 1.8rem;
 }
 
-.menu>li>.primary-link {
+.menu > li > .primary-link {
   font-size: 1rem;
 }
 
@@ -129,7 +138,7 @@ main {
   transition: all 0.5s ease;
 }
 
-.btn-toggle>img {
+.btn-toggle > img {
   width: 2.2rem;
 }
 
@@ -192,13 +201,18 @@ main {
 }
 
 .img-section-primary,
-.img-section-secondary {
+.img-section-secondary,
+.img-profesional {
   width: 100%;
 }
 
-.video-container{
+.img-profesional {
+  padding-bottom: var(--space-m);
+}
+
+.video-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* A revisar */
 }
 
 .wrapper-video-section:last-child {
@@ -232,6 +246,7 @@ footer {
   color: var(--secondary-color9);
 }
 
+/* Nueva clase */
 .display-flow {
   display: flex;
   flex-direction: column;
@@ -245,77 +260,118 @@ footer {
   color: var(--terciary-color);
 }
 
-.lista-cursos>li {
+.lista-cursos > li {
   font-size: 14px;
   list-style: none;
   border-bottom: 1px solid var(--terciary-color);
   padding-bottom: 1rem;
 }
 
+/* Nueva clase */
 .title-espec {
   margin-bottom: var(--space-m);
 }
 
+/* Nueva clase */
 .profesional {
   color: var(--primary-color);
   text-decoration: underline;
   text-align: center;
 }
-.text-padding{
-  padding-left: var(--space-xs);
-  padding-top: var(--space-s);
+
+/* Nueva clase */
+.text-padding {
+  /* padding-left: var(--space-xs); */
+  /* padding-top: var(--space-s); */
 }
 
-.subtitulo{
+.text-padding-profesional > li {
+  padding-bottom: var(--space-xs);
+}
+
+.text-padding-profesional > li:last-child {
+  padding-bottom: 0;
+}
+
+/* Nueva clase */
+.subtitulo {
   color: var(--primary-color);
+  margin-top: var(--space-m);
+  padding-bottom: var(--space-xs);
   text-decoration-line: underline;
 }
 
-article>ul>li {
-  list-style-image: url("../img/logo-listado.png");
+/* Nueva clase */
+article > ul > li {
+  /* list-style-image: url("../img/logo-listado.png"); */
+  margin-left: var(--space-s);
 }
 
-.text-padding>ul {
+/* Nueva clase */
+.text-padding > ul {
   padding-bottom: var(--space-xs);
 }
 
+/* Nueva clase */
 p {
-  padding-bottom: var(--space-xs);
+  /* padding-bottom: var(--space-xs); */
 }
-.lista-li{
-  text-align: center;
-  list-style-image: url("../img/pruebas.png");
+
+/* Nueva clase */
+.lista-li {
+  /* text-align: center; */
+  list-style: none;
+  /* list-style-image: url("../img/pruebas.png"); */
 }
-.position-profesional{
+
+/* Nueva clase */
+.position-profesional {
   display: none;
 }
-.video-skills{
-padding-bottom: var(--space-l);
+
+/* Nueva clase */
+.video-skills {
+  padding-bottom: var(--space-l);
+}
+
+.video-skills:last-child {
+  padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  .lista-li{
+  /* Nueva clase */
+  .lista-li {
     text-align: left;
   }
-  .profesional{
+
+  /* Nueva clase */
+  .profesional {
     padding-top: var(--space-xs);
   }
+
+  /* Nueva clase */
   .text-padding {
     padding-top: 0rem;
-    padding-left: var(--space-m);
+    /* padding-left: var(--space-m); */
   }
 
-  .position-profesional{
-    display:inline-block;
-    
+  .text-profesional {
+    padding-right: var(--space-s);
   }
 
-  .position-profesional2{
+  /* Nueva clase */
+  .position-profesional {
+    display: inline-block;
+  }
+
+  /* Nueva clase */
+  .position-profesional2 {
     display: none;
   }
 
-  .display-flow{
+  /* Nueva clase */
+  .display-flow {
     flex-direction: row;
-    text-align: center;
+    /* text-align: center; */
   }
 
   nav {
@@ -324,7 +380,7 @@ padding-bottom: var(--space-l);
     position: sticky;
     top: 0;
     right: 0;
-    padding: var(--space-m) var(--space-l);
+    padding: var(--space-s) var(--space-l);
   }
 
   .menu {
@@ -339,7 +395,7 @@ padding-bottom: var(--space-l);
     width: 50%;
   }
 
-  .menu>li>.primary-link:hover {
+  .menu > li > .primary-link:hover {
     background-color: var(--terciary-color);
     color: var(--primary-color);
   }
@@ -348,15 +404,13 @@ padding-bottom: var(--space-l);
     display: none;
   }
 
-
-  .menu>li {
+  .menu > li {
     font-size: 1rem;
   }
 
-  .menu>li>.primary-link {
+  .menu > li > .primary-link {
     margin: unset;
   }
-
 
   .section-secondary {
     text-align: center;
@@ -366,31 +420,37 @@ padding-bottom: var(--space-l);
   .video-container {
     flex-direction: row;
     align-items: center;
-
   }
 
-
+  /* Nueva propiedades */
   .wrapper-video-section {
     width: 100%;
     flex-wrap: wrap;
   }
 
-  .video-skills{
-    padding:0rem var(--space-xs);
+  /* Nueva propiedades */
+  .video-skills {
+    padding: 0rem var(--space-xs);
     width: 30%;
     height: 12rem;
- 
   }
-
 
   .wrapper-image-section-right {
     text-align: right;
     width: 50%;
   }
 
-  .wrapper-image-section-left {
+  .wrapper-image-section-left,
+  .wrapper-image-section-left-profesional {
     text-align: left;
     width: 50%;
+    padding-left: var(--space-m);
+  }
+
+  .wrapper-image-section-profesional {
+    width: 50%;
+    padding-right: var(--space-s);
+    padding-left: var(--space-s);
   }
 
   .info-aprende-mejores {
@@ -406,6 +466,16 @@ padding-bottom: var(--space-l);
 
   footer {
     font-size: 0.7rem;
+  }
+
+  .img-profesional {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .title-espec {
+    margin-bottom: var(--space-l);
+    text-align: center;
   }
 
   /* .scene {
