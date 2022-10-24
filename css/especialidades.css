@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap");
 
-
 .section-primary,
 .section-secondary {
   padding: var(--space-l) var(--space-s);
@@ -41,7 +40,7 @@
 
 .video-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .display-flow {
@@ -110,12 +109,85 @@ article > ul > li {
   padding: unset;
 }
 
-@media (min-width: 768px) {
+/* ------------  PROFILE ------------------*/
 
+.card-container-profile {
+  padding: var(--space-l) var(--space-s) var(--space-2xs);
+}
+.card {
+  /* max-width: 250px; */
+  /* width: 300px; */
+  margin: var(--space-m) 0;
+  background-color: #ffffff;
+  box-shadow: 0 10px 90px #00000024;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #000000;
+  line-height: 1.8rem;
+}
+
+.card .card-header {
+  position: relative;
+  height: 48px;
+}
+
+.card_instituto {
+  font-size: 1.1rem;
+  padding: var(--space-s) 0 var(--space-2xs);
+}
+
+.card .card-header .profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ed7b49;
+  box-shadow: 0 0 20px #00000033;
+}
+
+.card .card-body {
+  padding: 10px 40px;
+}
+
+.card .card-body .name {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ed7b49;
+}
+
+.card .card-body .mail {
+  font-size: 1rem;
+}
+
+.card .card-body .description {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* .card:last-child {
+  margin-right: 0;
+} */
+
+.card .card-footer {
+  background-color: #ed7b49;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: var(--space-2xs) 0;
+}
+
+.card .card-footer .count {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
   .section-secondary {
     padding: var(--space-xl) var(--space-l);
   }
-  
+
   .lista-li {
     text-align: left;
   }
@@ -184,7 +256,5 @@ article > ul > li {
 
   .title-espec {
     margin-bottom: var(--space-l);
-    
   }
-
 }
