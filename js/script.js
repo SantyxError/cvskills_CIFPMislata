@@ -16,3 +16,13 @@ var cards = document.querySelectorAll(".card");
     card.classList.toggle("is-flipped");
   });
 });
+
+document.getElementById("valencia").onclick = function () {
+  let localizacion = window.location.pathname;
+  (localizacion.includes("_vlc.html")) ? "" : location.href = window.location.pathname.substring(0, window.location.pathname.length - 5) + "_vlc.html";
+};
+
+document.getElementById("spain").onclick = function () {
+  let localizacion = window.location.pathname;
+  (localizacion.includes("_vlc.html")) ? location.href = window.location.pathname.substring(0, window.location.pathname.length - 9) + ".html" : "";
+};
