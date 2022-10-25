@@ -210,7 +210,7 @@ article > ul > li {
 
   .position-profesional {
     display: inline-block;
-    width: 100%;
+    width: 60%;
     text-align: left;
     padding-top: var(--space-2xl);
   }
