@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web de CV Skills." />
+    <link rel="icon" type="image/jpg" href="./img/logoSkills.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web de CV Skills." />
-  <link rel="icon" type="image/jpg" href="./img/logoSkills.png" />
-  <link rel="stylesheet" href="./css/styles.css" />
+    <title>Web Skills CV</title>
+  </head>
 
   <title>Web Skills CV</title>
 </head>
@@ -16,228 +18,353 @@
   <nav>
     <div class="hamburguer-menu">
       <img class="logo" src="./img/logoSkills.png" alt="Web Skills Logo" />
-      <p class="locationEvent">Palacio de congresos - Marzo 2023</p>
+      <p class="locationEvent"><b>Feria de Muestras</b> - Marzo 2023</p>
       <div class="idiomas">
         <input class="link-idioma bandera" id="spain" type="image" src="./img/bandera_spain.PNG">
         <input class="link-idioma bandera" id="valencia" type="image" src="./img/bandera_valenciana.PNG">
+        </div>
+        <button class="btn-toggle">
+          <img src="./img/menu.svg" alt="Botón menú" />
+        </button>
       </div>
-      <button class="btn-toggle">
-        <img src="./img/menu.svg" alt="Botón menú" />
-      </button>
-    </div>
 
+      <ul class="menu">
+        <li><a class="item-menu" href="#">Inicio</a></li>
+        <li><a class="item-menu" href="#">¿Qué son?</a></li>
+        <li><a class="item-menu" href="#especialidades">Especialidades</a></li>
+        <li><a class="primary-link" href="#">Apúntate</a></li>
+        <p class="locationEvent-mobile">
+          Palacio de congresos <br />
+          Marzo 2023
+        </p>
+      </ul>
+    </nav>
 
+    <main>
+      <section class="section-intro">
+        <article>
+          <h1 class="title">
+            Tu experiencia en las <b>Skills</b> comienza ahora
+          </h1>
+          <p class="subtitle">Palacio de congresos - Marzo 2023</p>
+          <a class="primary-link" href="#">Apúntate</a>
+        </article>
+        <img
+          class="img-intro"
+          src="./img/amistad_v2.svg"
+          alt="Imagen del header"
+        />
+      </section>
 
-    <ul class="menu">
-      <li><a class="item-menu" href="#">Inicio</a></li>
-      <li><a class="item-menu" href="#">¿Qué son?</a></li>
-      <li><a class="item-menu" href="#especialidades">Especialidades</a></li>
-      <li><a class="primary-link" href="#">Apúntate</a></li>
-      <p class="locationEvent-mobile">
-        Palacio de congresos <br />
-        Marzo 2023
-      </p>
-    </ul>
-  </nav>
-
-  <main>
-    <section class="section-intro">
-      <article>
-        <h1 class="title">
-          Tu experiencia en las <b>Skills</b> comienza ahora
-        </h1>
-        <p class="subtitle">Palacio de congresos - Marzo 2023</p>
-        <a class="primary-link" href="#">Apúntate</a>
-      </article>
-      <img class="img-intro" src="./img/amistad_v2.svg" alt="Imagen del header" />
-    </section>
-
-    <section class="section-secondary">
-      <article class="intro-skills">
-        <div class="wrapper-image-section-right">
-          <h1 class="title2">¿Qué son las Skills?</h1>
-          <p class="text-with-padding">
-            Las Skills son las Olimpiadas de Formación Profesional, en la que
-            los estudiantes de FP participan para demostrar las destrezas y
-            habilidades que han adquirido.
-          </p>
-          <a class="secondary-link" href="#">Saber más</a>
-        </div>
-
-        <div class="wrapper-image-section-right">
-          <img class="img-section-secondary" src="./img/intro.svg" alt="Imagen prueba" />
-          <div id="especialidades"></div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section-terciary">
-      <article>
-        <h1 class="title">Lista de especialidades</h1>
-
-        <div class="cards">
-          <div class="card">
-            <div class="skill-container">
-              <img class="skill-img" src="./img/skill1.jpg" alt="" />
-            </div>
-            <div class="details">
-              <h3>Informática y comunicaciones</h3>
-              <ul class="lista-cursos">
-                <li>
-                  <a class="item-menu" href="./especialidades/desarrollo_web.html">Desarrollo Web</a>
-                </li>
-                <li> <a class="item-menu" href="./especialidades/disenyo_animacion_juegos.html">Diseño de juegos y
-                    animaciones 3D</a></li>
-                <li> <a class="item-menu" href="./especialidades/administracion_sistemas_red.html">TIC Administración de
-                    Sistemas en Red</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="skill-container">
-              <img class="skill-img" src="./img/skill3.jpg" alt="" />
-            </div>
-            <div class="details">
-              <h3>Construcciones e Instalaciones</h3>
-              <ul class="lista-cursos">
-                <li><a class="item-menu" href="./especialidades/fontaneria_calefaccion.html">Fontaneria y
-                    Calefacción</a></li>
-                <li><a class="item-menu" href="./especialidades/instalaciones_electricas.html">Instalaciones
-                    Eléctricas</a></li>
-                <li><a class="item-menu" href="./especialidades/ebanisteria.html">Ebanistería</a></li>
-                <li><a class="item-menu"
-                    href="./especialidades/carpinteria_construciones-instalaciones.html">Carpintería</a></li>
-                <li><a class="item-menu" href="./especialidades/jardineria_paisajistica.html">Jardinería
-                    Paisajistíca</a></li>
-                <li><a class="item-menu" href="./especialidades/refrigeracion_aire-acondicionado.html">Refrigeración y
-                    Aire Acondicionado</a></li>
-              </ul>
-            </div>
+      <section class="section-secondary">
+        <article class="intro-skills">
+          <div class="wrapper-image-section-right">
+            <h1 class="title2">¿Qué son las Skills?</h1>
+            <p class="text-with-padding">
+              Las Skills son las Olimpiadas de Formación Profesional, en la que
+              los estudiantes de FP participan para demostrar las destrezas y
+              habilidades que han adquirido.
+            </p>
+            <a class="secondary-link" href="#">Saber más</a>
           </div>
 
-          <div class="card">
-            <div class="skill-container">
-              <img class="skill-img" src="./img/skill4.jpg" alt="" />
+          <div class="wrapper-image-section-right">
+            <img
+              class="img-section-secondary"
+              src="./img/intro.svg"
+              alt="Imagen prueba"
+            />
+            <div id="especialidades"></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-terciary">
+        <article>
+          <h1 class="title">Lista de especialidades</h1>
+
+          <div class="cards">
+            <div class="card">
+              <div class="skill-container">
+                <img class="skill-img" src="./img/skill1.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h3>Informática y comunicaciones</h3>
+                <ul class="lista-cursos">
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/desarrollo_web.html"
+                      >Desarrollo Web</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/disenyo_animacion_juegos.html"
+                      >Diseño de juegos y animaciones 3D</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/administracion_sistemas_red.html"
+                      >TIC Administración de Sistemas en Red</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="details">
-              <h3>Fabricación</h3>
-              <ul class="lista-cursos">
-                <li><a class="item-menu" href="./especialidades/mecatronica.html">Mecatrónica</a></li>
-                <li><a class="item-menu" href="./especialidades/disenyo_mecanico.html">Diseño Mecánico-CAD</a></li>
-                <li><a class="item-menu" href="./especialidades/cnc_fresado.html">CNC-Fresado</a></li>
-                <li><a class="item-menu" href="./especialidades/soldadura.html">Soldadura</a></li>
-                <li><a class="item-menu" href="./especialidades/electronica.html">Electrónica</a></li>
-                <li><a class="item-menu" href="./especialidades/control_industrial.html">Control Industrial</a></li>
-              </ul>
+            <div class="card">
+              <div class="skill-container">
+                <img class="skill-img" src="./img/skill3.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h3>Construcciones e Instalaciones</h3>
+                <ul class="lista-cursos">
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/fontaneria_calefaccion.html"
+                      >Fontanería y Calefacción</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/instalaciones_electricas.html"
+                      >Instalaciones Eléctricas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/ebanisteria.html"
+                      >Ebanistería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/carpinteria_construciones-instalaciones.html"
+                      >Carpintería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/jardineria_paisajistica.html"
+                      >Jardinería Paisajística</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/refrigeracion_aire-acondicionado.html"
+                      >Refrigeración y Aire Acondicionado</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-container">
+                <img class="skill-img" src="./img/skill4.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h3>Fabricación</h3>
+                <ul class="lista-cursos">
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/mecatronica.html"
+                      >Mecatrónica</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/disenyo_mecanico.html"
+                      >Diseño Mecánico-CAD</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/cnc_fresado.html"
+                      >CNC-Fresado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="item-menu" href="./especialidades/soldadura.html"
+                      >Soldadura</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/electronica.html"
+                      >Electrónica</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/control_industrial.html"
+                      >Control Industrial</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-container">
+                <img class="skill-img" src="./img/skill6.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h3>Servicios</h3>
+                <ul class="lista-cursos">
+                  <li>Peluquería</li>
+                  <li>Estética</li>
+                  <li>Panadería y pastelería</li>
+                  <li>Carpintería</li>
+                  <li>Servicios de Restaurante y Bar</li>
+                  <li>Atención Sociosanitaria</li>
+                  <li>Recepción Hostelera</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-container">
+                <img class="skill-img" src="./img/skill5.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h3>Artes Creativas</h3>
+                <ul class="lista-cursos">
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/flosristeria.html"
+                      >Floristería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/tecnologia_moda.html"
+                      >Tecnología de la Moda</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="skill-container">
+                <img class="skill-img" src="./img/skill2.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h3>Transporte y Logística</h3>
+                <ul class="lista-cursos">
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/reparacion_carroceria.html"
+                      >Reparación de Carrocería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/tecnologia_automovil.html"
+                      >Tecnología del automóvil</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="item-menu"
+                      href="./especialidades/pintura_automovil.html"
+                      >Pintura del Automóvil</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+        </article>
+      </section>
 
-          <div class="card">
-            <div class="skill-container">
-              <img class="skill-img" src="./img/skill6.jpg" alt="" />
-            </div>
-            <div class="details">
-              <h3>Servicios</h3>
-              <ul class="lista-cursos">
-                <li>Peluquería</li>
-                <li>Estética</li>
-                <li>Panadería y pastelería</li>
-                <li>Carpintería</li>
-                <li>Servicios de Restaurante y Bar</li>
-                <li>Atención Sociosanitaria</li>
-                <li>Recepción Hostelera</li>
-              </ul>
-            </div>
+      <section class="section-secondary">
+        <article class="video-container-home">
+          <div class="wrapper-video-section">
+            <h1 class="title2">¿Hasta dónde quieres llegar?</h1>
+            <p class="text">
+              Es la hora de ver lo que que te espera. Una diversidad de
+              emociones tras largas horas de lucha contra ti mismo que se unirán
+              el calor de un abrazo de tus compañeros, familiares y profesores.
+            </p>
+            <a class="secondary-link" href="#">Saber más</a>
           </div>
 
-          <div class="card">
-            <div class="skill-container">
-              <img class="skill-img" src="./img/skill5.jpg" alt="" />
-            </div>
-            <div class="details">
-              <h3>Artes Creativas</h3>
-              <ul class="lista-cursos">
-                <li><a class="item-menu" href="./especialidades/flosristeria.html">Floristería</a></li>
-                <li><a class="item-menu" href="./especialidades/tecnologia_moda.html">Tecnología de la Moda</a></li>
-              </ul>
-            </div>
+          <div class="wrapper-video-section">
+            <iframe
+              class="video-skills"
+              src="https://www.youtube.com/embed/1TCSX9aVC3Q"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-terciary">
+        <article class="info-medallas">
+          <div class="wrapper-image-section-right">
+            <h1 class="title">¡Algo más que medallas!</h1>
+            <p class="text">
+              Esta competición se basa en la experiencia de cada uno de vosotros
+              y en la unidad gracias al apoyo del resto.
+            </p>
+            <a class="primary-link" href="#">Saber más</a>
           </div>
 
-          <div class="card">
-            <div class="skill-container">
-              <img class="skill-img" src="./img/skill2.jpg" alt="" />
-            </div>
-            <div class="details">
-              <h3>Transporte y Logística</h3>
-              <ul class="lista-cursos">
-                <li><a class="item-menu" href="./especialidades/reparacion_carroceria.html">Reparación de Carrocería</a>
-                </li>
-                <li><a class="item-menu" href="./especialidades/tecnologia_automovil.html">Tecnología del automóvil</a>
-                </li>
-                <li><a class="item-menu" href="./especialidades/pintura_automovil.html">Pintura del Automóvil</a></li>
-              </ul>
-            </div>
+          <div class="wrapper-image-section-right">
+            <img
+              class="img-section-primary"
+              src="./img/amistad2.svg"
+              alt="Imagen prueba"
+            />
           </div>
-        </div>
-      </article>
-    </section>
+        </article>
+      </section>
 
-    <section class="section-secondary">
-      <article class="video-container-home">
-        <div class="wrapper-video-section">
-          <h1 class="title2">¿Hasta dónde quieres llegar?</h1>
-          <p class="text">
-            Es la hora de ver lo que que te espera. Una diversidad de
-            emociones tras largas horas de lucha contra ti mismo que se unirán
-            el calor de un abrazo de tus compañeros, familiares y profesores.
-          </p>
-          <a class="secondary-link" href="#">Saber más</a>
-        </div>
+      <section class="section-secondary">
+        <article class="info-aprende-mejores">
+          <div class="wrapper-image-section-left">
+            <h1 class="title2">Aprende de los mejores</h1>
+            <p class="text">
+              Después de ganar en nuestra comunidad, te prepararán para llegar a
+              lo más lejos posible, sin tener ningún límite.
+            </p>
+            <a class="secondary-link" href="#">Saber más</a>
+          </div>
 
-        <div class="wrapper-video-section">
-          <iframe class="video-skills" src="https://www.youtube.com/embed/1TCSX9aVC3Q" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </article>
-    </section>
+          <div class="wrapper-image-section-left">
+            <img
+              class="img-section-secondary"
+              src="./img/aprender.svg"
+              alt="Imagen prueba"
+            />
+          </div>
+        </article>
+      </section>
 
-    <section class="section-terciary">
-      <article class="info-medallas">
-        <div class="wrapper-image-section-right">
-          <h1 class="title">¡Algo más que medallas!</h1>
-          <p class="text">
-            Esta competición se basa en la experiencia de cada uno de vosotros
-            y en la unidad gracias al apoyo del resto.
-          </p>
-          <a class="primary-link" href="#">Saber más</a>
-        </div>
-
-        <div class="wrapper-image-section-right">
-          <img class="img-section-primary" src="./img/amistad2.svg" alt="Imagen prueba" />
-        </div>
-      </article>
-    </section>
-
-    <section class="section-secondary">
-      <article class="info-aprende-mejores">
-        <div class="wrapper-image-section-left">
-          <h1 class="title2">Aprende de los mejores</h1>
-          <p class="text">
-            Después de ganar en nuestra comunidad, te prepararán para llegar a
-            lo más lejos posible, sin tener ningún límite.
-          </p>
-          <a class="secondary-link" href="#">Saber más</a>
-        </div>
-
-        <div class="wrapper-image-section-left">
-          <img class="img-section-secondary" src="./img/aprender.svg" alt="Imagen prueba" />
-        </div>
-      </article>
-    </section>
-
-    <!-- <section class="section-terciary">
+      <!-- <section class="section-terciary">
         <article class="info-mas-alto">
           <div class="wrapper-image-section-right">
             <h1 class="title">¡Llega a lo más alto!</h1>
@@ -257,21 +384,21 @@
           </div>
         </article>
       </section> -->
-  </main>
+    </main>
 
-  <footer>
-    <ul class="footer-section">
-      <li><a class="footer-item" href="#">Terms</a></li>
-      <li><a class="footer-item">|</a></li>
-      <li><a class="footer-item" href="#">Policy</a></li>
-      <li><a class="footer-item">|</a></li>
-      <li><a class="footer-item" href="#">Contacto</a></li>
-    </ul>
+    <footer>
+      <ul class="footer-section">
+        <li><a class="footer-item" href="#">Terms</a></li>
+        <li><a class="footer-item">|</a></li>
+        <li><a class="footer-item" href="#">Policy</a></li>
+        <li><a class="footer-item">|</a></li>
+        <li><a class="footer-item" href="#">Contacto</a></li>
+      </ul>
 
-    <p class="footer-credits">©2022 Grupo 4</p>
-  </footer>
+      <p class="footer-credits">©2022 Grupo 4</p>
+    </footer>
 
-  <script src="./js/script.js"></script>
-</body>
-
+</html>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

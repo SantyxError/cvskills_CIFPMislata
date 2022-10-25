@@ -9,14 +9,7 @@ btnToggle[0].addEventListener("click", function () {
   }
 });
 
-var cards = document.querySelectorAll(".card");
-
-[...cards].forEach((card) => {
-  card.addEventListener("click", function () {
-    card.classList.toggle("is-flipped");
-  });
-});
-
+// var cards = document.querySelectorAll(".card");
 document.getElementById("valencia").onclick = function () {
   let localizacion = window.location.pathname;
   (localizacion.includes("_vlc.html")) ? "" : location.href = window.location.pathname.substring(0, window.location.pathname.length - 5) + "_vlc.html";
@@ -26,3 +19,11 @@ document.getElementById("spain").onclick = function () {
   let localizacion = window.location.pathname;
   (localizacion.includes("_vlc.html")) ? location.href = window.location.pathname.substring(0, window.location.pathname.length - 9) + ".html" : "";
 };
+
+
+// [...cards].forEach((card) => {
+//   card.addEventListener("click", function () {
+//     card.classList.toggle("is-flipped");
+//   });
+// });
+
