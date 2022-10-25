@@ -18,6 +18,7 @@
   font-weight: 400;
   margin-bottom: var(--space-s);
   text-align: left;
+  padding-left: var(--space-s);
 }
 
 .text-profesional,
@@ -48,9 +49,9 @@
   flex-direction: column;
 }
 
-.title-espec {
+/* .title-espec {
   margin-bottom: var(--space-m);
-}
+} */
 
 .profesional {
   color: var(--primary-color);
@@ -75,7 +76,7 @@
   color: var(--primary-color);
   margin-top: var(--space-m);
   padding-bottom: var(--space-xs);
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
 }
 
 article > ul > li {
@@ -123,7 +124,7 @@ article > ul > li {
   text-align: center;
   font-size: 1.4rem;
   border-radius: 5px;
-  color: #000000;
+  color: var(--secondary-color2);
   line-height: 1.8rem;
 }
 
@@ -144,19 +145,20 @@ article > ul > li {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ed7b49;
+  background-color: var(--primary-color);
   box-shadow: 0 0 20px #00000033;
 }
 
 .card .card-body {
   padding: 10px 40px;
+  padding-bottom: var(--space-m);
 }
 
 .card .card-body .name {
   margin-top: 30px;
   font-size: 1.3rem;
   font-weight: bold;
-  color: #ed7b49;
+  color: var(--primary-color);
 }
 
 .card .card-body .mail {
@@ -166,6 +168,7 @@ article > ul > li {
 .card .card-body .description {
   margin-top: 10px;
   font-size: 1rem;
+  padding-bottom: var(--space-s);
 }
 
 /* .card:last-child {
@@ -173,10 +176,10 @@ article > ul > li {
 } */
 
 .card .card-footer {
-  background-color: #ed7b49;
+  background-color: var(--primary-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding: var(--space-2xs) 0;
+  padding: var(--space-3xs) 0;
 }
 
 .card .card-footer .count {
@@ -209,6 +212,7 @@ article > ul > li {
     display: inline-block;
     width: 100%;
     text-align: left;
+    padding-top: var(--space-2xl);
   }
 
   .position-profesional2 {
@@ -256,5 +260,12 @@ article > ul > li {
 
   .title-espec {
     margin-bottom: var(--space-l);
+  }
+
+  .card-container-profile {
+    display: none;
+  }
+
+  .card-container-profile-desktop {
   }
 }

@@ -27,6 +27,7 @@
   --light-grey: rgb(184, 184, 184);
   --medium-grey: rgb(160, 160, 160);
   --dark-grey: rgb(121, 121, 121);
+  --space-3xs: 0.4rem;
   --space-2xs: 0.5rem;
   --space-xs: 0.8rem;
   --space-s: 1.2rem;

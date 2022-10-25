@@ -9,10 +9,10 @@ btnToggle[0].addEventListener("click", function () {
   }
 });
 
-var cards = document.querySelectorAll(".card");
+// var cards = document.querySelectorAll(".card");
 
-[...cards].forEach((card) => {
-  card.addEventListener("click", function () {
-    card.classList.toggle("is-flipped");
-  });
-});
+// [...cards].forEach((card) => {
+//   card.addEventListener("click", function () {
+//     card.classList.toggle("is-flipped");
+//   });
+// });
