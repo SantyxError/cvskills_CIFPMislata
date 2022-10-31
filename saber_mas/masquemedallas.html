@@ -1,110 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web de CV Skills." />
+    <link rel="icon" type="image/jpg" href="../img/logoSkills.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/especialidades.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web de CV Skills." />
-  <link rel="icon" type="image/jpg" href="../img/logoSkills.png" />
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/especialidades.css">
+    <title>Web Skills CV</title>
+  </head>
 
-  <title>Web Skills CV</title>
-</head>
-
-<body>
-  <nav>
-    <div class="hamburguer-menu">
-      <img class="logo" src="../img/logoSkills.png" alt="Web Skills Logo" />
-      <p class="locationEvent"><b>Feria de Muestras</b> - Marzo 2023</p>
-      <div class="idiomas">
-        <input class="link-idioma bandera" id="spain" type="image" src="../img/bandera_spain.PNG">
-        <input class="link-idioma bandera" id="valencia" type="image" src="../img/bandera_valenciana.PNG">
+  <body>
+    <nav>
+      <div class="hamburguer-menu">
+        <img class="logo" src="../img/logoSkills.png" alt="Web Skills Logo" />
+        <p class="locationEvent"><b>Feria de Muestras</b> - Marzo 2023</p>
+        <div class="idiomas">
+          <input
+            class="link-idioma bandera"
+            id="spain"
+            type="image"
+            src="../img/bandera_spain.PNG"
+          />
+          <input
+            class="link-idioma bandera"
+            id="valencia"
+            type="image"
+            src="../img/bandera_valenciana.PNG"
+          />
+        </div>
+        <button class="btn-toggle">
+          <img src="../img/menu.svg" alt="Botón menú" />
+        </button>
       </div>
-      <button class="btn-toggle">
-        <img src="../img/menu.svg" alt="Botón menú" />
-      </button>
-    </div>
 
-    <ul class="menu">
-      <li><a class="item-menu" href="../index.html">Inicio</a></li>
-      <li><a class="item-menu" href="#">¿Qué son?</a></li>
-      <li>
-        <a class="item-menu" href="../index.html#especialidades">Especialidades</a>
-      </li>
-      <li><a class="primary-link" href="#">Apúntate</a></li>
-    </ul>
-  </nav>
+      <ul class="menu">
+        <li><a class="item-menu" href="../index.html">Inicio</a></li>
+        <li><a class="item-menu" href="#">¿Qué son?</a></li>
+        <li>
+          <a class="item-menu" href="../index.html#especialidades"
+            >Especialidades</a
+          >
+        </li>
+        <li><a class="primary-link" href="#">Apúntate</a></li>
+      </ul>
+    </nav>
 
-  <main>
-    <section class="section-primary">
-      <h1 class="title-espec">¡Únete a nuestro equipo!</h1>
-      <div class="display-flow">
-        <article class="wrapper-image-section-profesional">
-          <div>
-            <img class="img-profesional" src="../img/grupoValencia.jpg" alt="Imagen equipo Comunidad Valenciana" />
+    <main>
+      <section class="section-primary">
+        <h1 class="title-espec">¡Únete a nuestro equipo!</h1>
+        <div class="display-flow">
+          <article class="wrapper-image-section-profesional">
+            <div>
+              <img
+                class="img-profesional"
+                src="../img/equipo.svg"
+                alt="Imagen equipo Comunidad Valenciana"
+              />
+            </div>
+          </article>
+          <article class="wrapper-image-section-left-profesional">
+            <p class="text-profesional">
+              El trabajo en equipo, los ánimos y los aplausos son el día a día
+              de las skills.
+            </p>
 
+            <p class="text-profesional">
+              No solo podrás optar a las medallas y siguientes competiciones,
+              sino que estarás rodeado de amigos en todo momento.
+            </p>
+            <p class="text-profesional">
+              Tanto si son de tu comunidad o no, el reconocimiento está
+              asegurado.
+            </p>
+
+            <p class="text-profesional">
+              No pierdas esta oportunidad increíble de conocer a personas con
+              tus mismas motivaciones y fabricar momentos inolvidables.
+            </p>
+            <p class="text-profesional text-cita">
+              “La gente consigue más como resultado de trabajar con otros que
+              contra ellos.”
+              <br />
+              — Dr. Allan Fromme.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section-secondary">
+        <article class="wrapper-video-section">
+          <div class="wrapper-video-section">
+            <iframe
+              class="video-skills"
+              src="https://www.youtube.com/embed/_vJiT8_ddlY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </article>
-        <article class="wrapper-image-section-left-profesional">
-          <p class="text-profesional">
-            El trabajo en equipo, los ánimos y los aplausos son el día a día de las skills.
-          </p>
+      </section>
+    </main>
 
-          <p class="text-profesional">
-            No solo podrás optar a las medallas y siguientes competiciones, sino que estarás rodeado de amigos en todo
-            momento.
+    <footer>
+      <ul class="footer-section">
+        <li><a class="footer-item" href="#">Terms</a></li>
+        <li><a class="footer-item">|</a></li>
+        <li><a class="footer-item" href="#">Policy</a></li>
+        <li><a class="footer-item">|</a></li>
+        <li><a class="footer-item" href="#">Contacto</a></li>
+      </ul>
 
-          </p>
-          <p class="text-profesional">
-            Tanto si son de tu comunidad o no, el reconocimiento está asegurado.
+      <p class="footer-credits">©2022 Grupo 4</p>
+    </footer>
 
-          </p>
-
-          <p class="text-profesional">
-            No pierdas esta oportunidad increíble de conocer a personas con tus mismas motivaciones y fabricar momentos
-            inolvidables.
-
-          </p>
-          <p class="text-profesional text-cita">
-            “La gente consigue más como resultado de trabajar con otros que contra ellos.”
-            <br>
-            — Dr. Allan Fromme.
-
-          </p>
-        </article>
-      </div>
-    </section>
-    <section class="section-secondary">
-      <article class="wrapper-video-section">
-        <div class="wrapper-video-section">
-          <iframe
-          class="video-skills"
-          src="https://www.youtube.com/embed/_vJiT8_ddlY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <ul class="footer-section">
-      <li><a class="footer-item" href="#">Terms</a></li>
-      <li><a class="footer-item">|</a></li>
-      <li><a class="footer-item" href="#">Policy</a></li>
-      <li><a class="footer-item">|</a></li>
-      <li><a class="footer-item" href="#">Contacto</a></li>
-    </ul>
-
-    <p class="footer-credits">©2022 Grupo 4</p>
-  </footer>
-
-  <script src="../js/script.js"></script>
-</body>
-
+    <script src="../js/script.js"></script>
+  </body>
 </html>
