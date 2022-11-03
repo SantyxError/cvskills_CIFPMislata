@@ -1,0 +1,54 @@
+.avisoLegal .title-espec {
+  /* padding-inline-start: 20px; */
+  text-align: center;
+  margin-bottom: var(--space-xs);
+  padding-bottom: 0px;
+}
+
+.avisoLegal .subtitulo {
+  font-size: larger;
+}
+
+.text-profesional li {
+    padding-left: var(--space-s);
+    margin-left: var(--space-s);
+    margin-right: var(--space-xs);
+}
+
+/*Móviles horizontal o tablets*/
+@media (min-width: 760px) {
+  .avisoLegal {
+    text-align: left;
+    margin-left: var(--space-m);
+  }
+  .text-profesional li {
+    margin-left: var(--space-l);
+    padding-left: var(--space-m);
+    padding-bottom: var(--space-xs);
+  }
+}
+
+/*Tablets horizontal o escritorio normal*/
+@media (min-width: 1024px) {
+  .avisoLegal {
+    margin-left: var(--space-l);
+    margin-right: var(--space-m);
+    padding-left: var(--space-m);
+  }
+  .text-profesional li {
+    margin-right: var(--space-s);
+  }
+}
+
+/*Escritorios grandes*/
+@media (min-width: 1200px) {
+  .avisoLegal {
+    margin-left: var(--space-2xl);
+    padding-left: var(--space-2xl);
+    margin-right: var(--space-2xl);
+  }
+  .text-profesional li {
+    margin-left: var(--space-xl);
+    margin-right: var(--space-m);
+  }
+}
