@@ -2,7 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap");
 
 :root {
+  --primary-color-dark3: #9a2409;
+  --primary-color-dark2: #c63810;
+  --primary-color-dark1: #ea521a;
   --primary-color: #ed7b49;
+  --primary-color-light1: #f2a378;
+  --primary-color-light2: #f8c5a5;
+  --primary-color-light3: #fce2cf;
+  --primary-color-light4: #f5f5f5;
   /* --secondary-color: #0056b8; */
   --secondary-color0: #000132;
   --secondary-color1: #03045e;
@@ -15,9 +22,13 @@
   --secondary-color8: #ade8f4;
   --secondary-color9: #caf0f8;
   --terciary-color: #ffffff;
+  --terciary-color1: #f7f3f2;
+  --very-light-grey: rgb(241, 241, 241);
   --light-grey: rgb(184, 184, 184);
   --medium-grey: rgb(160, 160, 160);
   --dark-grey: rgb(121, 121, 121);
+  --space-3xs: 0.4rem;
+  --space-2xs: 0.5rem;
   --space-xs: 0.8rem;
   --space-s: 1.2rem;
   --space-m: 2rem;
@@ -108,6 +119,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: auto;
 }
 
 .menu {
@@ -198,22 +210,31 @@ main {
 
 .primary-link,
 .terciary-link {
-  background-color: var(--medium-grey);
-  color: var(--terciary-color);
+  background-color: var(--terciary-color);
+  color: var(--primary-color);
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--primary-color);
+  transition: duration 0.3s;
+  transition-property: transform;
 }
 
 .secondary-link {
   background-color: var(--terciary-color);
   color: var(--secondary-color2);
+  transition: duration 0.3s;
+  transition-property: transform;
 }
 
 .primary-link:hover {
-  background-color: var(--light-grey);
-  color: var(--terciary-color);
+  /* background-color: var(--primary-color-light4); */
+  transform: scale(1.05);
+  /*color: var(--terciary-color);*/
 }
 
 .secondary-link:hover {
-  background-color: var(--secondary-color9);
+  /* background-color: var(--secondary-color9); */
+  transform: scale(1.05);
 }
 
 .img-intro {
@@ -250,6 +271,7 @@ footer {
 }
 
 .footer-section {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-s) var(--space-m);
@@ -276,10 +298,11 @@ footer {
 }
 
 .lista-cursos > li {
-  font-size: 14px;
+  font-size: 18px;
   list-style: none;
-  border-bottom: 1px solid var(--terciary-color);
-  padding-bottom: 1rem;
+  /* border-bottom: 1px solid var(--terciary-color); */
+  padding-bottom: 2rem;
+  text-align: left;
 }
 
 .cards {
@@ -331,8 +354,18 @@ footer {
   line-height: 30px;
   font-weight: 400;
 }
-
+.bandera {
+  width: 2.2rem;
+  height: 1.5rem;
+}
+.link-idioma {
+  margin: 0px 20px;
+}
 @media (min-width: 768px) {
+  .hamburguer-menu {
+    width: 50%;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -355,7 +388,7 @@ footer {
   }
 
   .menu > li > .primary-link:hover {
-    background-color: var(--terciary-color);
+    /* background-color: var(--very-light-grey); */
     color: var(--primary-color);
   }
 

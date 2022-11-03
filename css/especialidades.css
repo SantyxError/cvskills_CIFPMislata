@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap");
 
-
 .section-primary,
 .section-secondary {
   padding: var(--space-l) var(--space-s);
@@ -19,6 +18,7 @@
   font-weight: 400;
   margin-bottom: var(--space-s);
   text-align: left;
+  padding-left: var(--space-s);
 }
 
 .text-profesional,
@@ -41,7 +41,7 @@
 
 .video-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .display-flow {
@@ -49,9 +49,9 @@
   flex-direction: column;
 }
 
-.title-espec {
+/* .title-espec {
   margin-bottom: var(--space-m);
-}
+} */
 
 .profesional {
   color: var(--primary-color);
@@ -59,10 +59,10 @@
   text-align: center;
 }
 
-.text-padding {
-  /* padding-left: var(--space-xs); */
-  /* padding-top: var(--space-s); */
-}
+/* .text-padding {
+   padding-left: var(--space-xs);
+  padding-top: var(--space-s);
+} */
 
 .text-padding-profesional > li {
   padding-bottom: var(--space-xs);
@@ -76,7 +76,7 @@
   color: var(--primary-color);
   margin-top: var(--space-m);
   padding-bottom: var(--space-xs);
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
 }
 
 article > ul > li {
@@ -110,12 +110,87 @@ article > ul > li {
   padding: unset;
 }
 
-@media (min-width: 768px) {
+/* ------------  PROFILE ------------------*/
 
+.card-container-profile {
+  padding: var(--space-l) var(--space-s) var(--space-2xs);
+}
+.card {
+  /* max-width: 250px; */
+  /* width: 300px; */
+  margin: var(--space-m) 0;
+  background-color: #ffffff;
+  box-shadow: 0 10px 90px #00000024;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: var(--secondary-color2);
+  line-height: 1.8rem;
+}
+
+.card .card-header {
+  position: relative;
+  height: 48px;
+}
+
+.card_instituto {
+  font-size: 1.1rem;
+  padding: var(--space-s) 0 var(--space-2xs);
+}
+
+.card .card-header .profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px #00000033;
+}
+
+.card .card-body {
+  padding: 10px 40px;
+  padding-bottom: var(--space-m);
+}
+
+.card .card-body .name {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.card .card-body .mail {
+  font-size: 1rem;
+}
+
+.card .card-body .description {
+  margin-top: 10px;
+  font-size: 1rem;
+  padding-bottom: var(--space-s);
+}
+
+/* .card:last-child {
+  margin-right: 0;
+} */
+
+.card .card-footer {
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: var(--space-3xs) 0;
+}
+
+.card .card-footer .count {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
   .section-secondary {
     padding: var(--space-xl) var(--space-l);
   }
-  
+
   .lista-li {
     text-align: left;
   }
@@ -135,8 +210,9 @@ article > ul > li {
 
   .position-profesional {
     display: inline-block;
-    width: 100%;
+    width: 60%;
     text-align: left;
+    padding-top: var(--space-2xl);
   }
 
   .position-profesional2 {
@@ -184,7 +260,12 @@ article > ul > li {
 
   .title-espec {
     margin-bottom: var(--space-l);
-    
   }
 
+  .card-container-profile {
+    display: none;
+  }
+
+  /* .card-container-profile-desktop {
+  } */
 }
