@@ -187,6 +187,9 @@ article > ul > li {
 }
 
 @media (min-width: 768px) {
+  .text-padding-left{
+    padding-left: 2rem;
+  }
   .section-secondary {
     padding: var(--space-xl) var(--space-l);
   }
