@@ -231,7 +231,11 @@ article > ul > li {
     width: 100%;
     flex-wrap: wrap;
   }
-
+  .video-skills2 {
+    padding: 0rem var(--space-xs);
+    width: 90%;
+    height: 20rem;
+  }
   .video-skills {
     padding: 0rem var(--space-xs);
     width: 30%;
