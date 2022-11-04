@@ -18,7 +18,6 @@
   font-weight: 400;
   margin-bottom: var(--space-s);
   text-align: left;
-  padding-left: var(--space-s);
 }
 
 .text-profesional,
@@ -46,7 +45,7 @@
 
 .display-flow {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 /* .title-espec {
@@ -187,6 +186,12 @@ article > ul > li {
 }
 
 @media (min-width: 768px) {
+  .title-espec{
+    padding-left: var(--space-s);
+  }
+  .text-padding-left{
+    padding-left: 2rem;
+  }
   .section-secondary {
     padding: var(--space-xl) var(--space-l);
   }
