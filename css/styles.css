@@ -256,6 +256,11 @@ main {
   flex-direction: column;
 }
 
+.display-flow {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .wrapper-video-section:last-child {
   padding: var(--space-m) 0;
   text-align: center;
