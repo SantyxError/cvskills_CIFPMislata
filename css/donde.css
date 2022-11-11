@@ -1,0 +1,38 @@
+
+/* MAPA */
+.mapa {
+    margin-left: 0rem;
+    padding-bottom: var(--space-s);
+    height: 20rem;
+    width: 100%;
+  }
+.mapa iframe {
+    height: 20rem;
+    width: 100%;
+}
+
+@media (min-width: 760px) {
+
+    .title-espec {
+        padding-left: var(--space-s);
+    }
+    .mapa {
+    margin-bottom: var(--space-m);
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: var(--space-s);
+    width: 100%;
+  }
+
+  .mapa iframe {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+    .mapa {
+  
+      width: 95%;
+    }
+  
+  }
