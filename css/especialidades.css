@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap");
 
-.section-primary,
+.section-primary
 .section-secondary {
   padding: var(--space-l) var(--space-s);
 }
@@ -46,7 +46,7 @@
 
 .display-flow {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 /* .title-espec {
