@@ -366,6 +366,9 @@ footer {
 .link-idioma {
   margin: 0px 20px;
 }
+.listaTransporte{
+  list-style: none;
+}
 @media (min-width: 768px) {
   .hamburguer-menu {
     width: 50%;
