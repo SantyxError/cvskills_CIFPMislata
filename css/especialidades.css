@@ -13,7 +13,7 @@
 .section-center{
   background-color: var(--terciary-color);
   color: var(--secondary-color2);
-  padding: var(--space-s) var(--space-s);
+  padding: 0 var(--space-s);
 }
 
 .title-espec {
@@ -203,7 +203,7 @@ article > ul > li {
 @media (min-width: 768px) {
   .section-center{
     text-align: center;
-    padding: var(--space-7xl) var(--space-7xl);
+    padding: 0 var(--space-7xl);
   }
   .text-padding-left {
     padding-left: 2rem;

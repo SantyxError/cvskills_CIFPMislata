@@ -42,7 +42,10 @@
   --space-7xl: 12.4rem;
   --card-border-radius: 0.5rem;
 }
-
+.no-link{
+  text-decoration: none;
+  color:white;
+}
 * {
   padding: unset;
   margin: unset;
@@ -301,7 +304,8 @@ footer {
 }
 
 .footer-credits,
-.footer-section {
+.footer-section,
+footer {
   background-color: var(--secondary-color0);
 }
 
