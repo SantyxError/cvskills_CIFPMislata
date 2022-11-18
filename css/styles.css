@@ -159,7 +159,6 @@ main {
   color: var(--primary-color-light1);
 }
 
-
 .btn-toggle {
   display: block;
   border: unset;
@@ -252,8 +251,25 @@ main {
 }
 
 .img-section-primary,
-.img-section-secondary {
+.img-section-secondary,
+.img-profesional-queson,
+.img-profesional-hastadonde,
+.wrapper-video-section-img,
+.img-profesional-medallas {
   width: 100%;
+}
+
+.img-profesional-medallas {
+}
+
+.wrapper-video-section-img {
+}
+
+.wrapper-video-section-hastadonde {
+}
+
+.img-profesional-queson {
+  padding-top: var(--space-s);
 }
 
 .video-container-home,
@@ -263,6 +279,10 @@ main {
 .intro-skills {
   display: flex;
   flex-direction: column;
+}
+
+.info-medallas {
+  gap: var(--space-s);
 }
 
 .display-flow {
@@ -375,7 +395,7 @@ footer {
 .link-idioma {
   margin: 0px 20px;
 }
-.listaTransporte{
+.listaTransporte {
   list-style: none;
 }
 @media (min-width: 768px) {
@@ -479,6 +499,7 @@ footer {
   }
 
   .wrapper-image-section-right {
+    /* padding-top: var(--space-m); */
     text-align: right;
     width: 50%;
   }
