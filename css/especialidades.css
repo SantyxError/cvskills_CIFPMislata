@@ -202,7 +202,7 @@ article > ul > li {
 
 @media (min-width: 768px) {
   .section-center{
-    text-align: center;
+    text-align: left;
     padding: 0 var(--space-7xl);
   }
   .text-padding-left {
@@ -291,7 +291,6 @@ article > ul > li {
     display: none;
   }
   .display-3-columnas {
-    text-align:left;
     display: flex;
     gap:var(--space-s);
   }
