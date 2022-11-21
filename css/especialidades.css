@@ -290,6 +290,13 @@ article > ul > li {
   .card-container-profile {
     display: none;
   }
+  .display-3-columnas {
+    display: flex;
+    gap:var(--space-s);
+  }
+  .display-3-element {
+    flex:33.3%;
+  }
 
   /* .card-container-profile-desktop {
   } */
