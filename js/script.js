@@ -12,7 +12,7 @@ btnToggle[0].addEventListener("click", function () {
 // var cards = document.querySelectorAll(".card");
 document.getElementById("valencia").onclick = function () {
   let localizacion = window.location.pathname;
-  (localizacion == "/") ? location.href = "index_vlc.html" : (localizacion.includes("_vlc.html")) ? "" : location.href = window.location.pathname.substring(0, window.location.pathname.length - 5) + "_vlc.html";
+  (localizacion == "/" || localizacion=="/cvskills_CIFPMislata/") ? location.href = "index_vlc.html" : (localizacion.includes("_vlc.html")) ? "" : location.href = window.location.pathname.substring(0, window.location.pathname.length - 5) + "_vlc.html";
 };
 
 document.getElementById("spain").onclick = function () {
