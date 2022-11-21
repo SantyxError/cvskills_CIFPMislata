@@ -201,6 +201,14 @@ article > ul > li {
 }
 
 @media (min-width: 768px) {
+  .display-flow {
+    display: flex;
+    flex-direction: column;
+  }
+  .display-flow-especialidad {
+    display: flex;
+    flex-direction: column;
+  }
   .section-center{
     text-align: center;
     padding: 0 var(--space-7xl);
@@ -241,6 +249,10 @@ article > ul > li {
   }
 
   .display-flow {
+    flex-direction: row;
+    /* text-align: center; */
+  }
+  .display-flow-especialidad {
     flex-direction: row;
     /* text-align: center; */
   }
