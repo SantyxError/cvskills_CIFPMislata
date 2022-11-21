@@ -291,6 +291,7 @@ article > ul > li {
     display: none;
   }
   .display-3-columnas {
+    text-align:left;
     display: flex;
     gap:var(--space-s);
   }
